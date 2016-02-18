@@ -49,9 +49,9 @@ If little to no output is shown then the tunnel has been established.
 
 * NOTE: do not stop the SSH tunnel process or you will loose your connection to the Jupyter notebook
 
-[text]
+```
 albert@laptop:~>ssh -L 9999:localhost:8888 defusco@frank.sam.pitt.edu ssh -L 8888:localhost:4922 -N n4
 Warning: Permanently added 'n4,10.201.1.4' (RSA) to the list of known hosts.
-[/text]
+```
 
 Once the tunnel has been established you can connect directly to your Jupyter notebook running on the compute node by navigating your browser to `http://localhost:9999`.
