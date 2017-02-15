@@ -21,7 +21,7 @@ else
   echo "Your SSH tunnel command on your desktop should look like the following"
   echo "  ssh -L 9999:localhost:8888 $USER@\$GATEWAY ssh -L 8888:localhost:$port $HOSTNAME"
   echo "or"
-  echo "  ssh -L 9999:\$HOSTNAME:\$port $USER@\$GATEWAY"   
+  echo "  ssh -L 9999:$HOSTNAME:$port $USER@\$GATEWAY"   
   echo
   echo "  This job was submitted from $PBS_O_HOST and it may be able to serve as the \$GATEWAY node"
   echo
